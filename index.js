@@ -16,8 +16,7 @@ module.exports = function(bundler) {
   console.log('Peer Dependencies detected:', peerDependencies);
   const names = Object.keys(peerDependencies);
   const modules = names.reduce((acc, name) => {
-    // The idea behind is all packages in monorepo should be
-    // on the same level
+    // I believe all packages in monorepo should be on the same level
     const p = resolve(rootDir, name);
     acc[p] = name;
     return acc;
@@ -31,16 +30,4 @@ module.exports = function(bundler) {
       : p;
     return superResolver.call(this, p);
   };
-
-
-
-
-
-
-
-  // const peers = Object.keys(pkg.peerDependencies);
-  // console.log(peers);
-  // const target = findTarget(bundler.options.rootDir);
-  // const externals = retrieveExternals(target);
-  // extendBundlerWithExternals(bundler, externals);
 };
