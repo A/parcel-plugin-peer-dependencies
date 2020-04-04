@@ -1,0 +1,14 @@
+{
+  "name": "parcel-plugin-peer-dependencies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Anton <anton@shuvalov.info> (http://shuvalov.info/)",
+  "license": "MIT",
+  "dependencies": {
+    "read-pkg-up": "^7.0.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "resolve-from": "^5.0.0"
+  }
+}
