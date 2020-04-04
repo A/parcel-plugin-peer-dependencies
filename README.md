@@ -32,7 +32,7 @@ Just declare your peerDependencies in the `package.json`:
 
 ```
 
-The logic behind is based on idea, that peer dependency is declared inside of root level `package.json` file
+The logic behind is based on idea, that peer dependency is hoisted into the workspace root,
 and included into the one of sibling packages.
 
 
